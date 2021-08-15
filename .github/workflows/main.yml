@@ -22,7 +22,7 @@ jobs:
       - name: Run Test	
         uses: thundra-io/thundra-maven-test-action@v1.0.2
         with:
-          commands: "clean install test"
+          command: "clean install test"
 
       - name: Deploy to Heroku
         uses: AkhileshNS/heroku-deploy@v3.12.12
