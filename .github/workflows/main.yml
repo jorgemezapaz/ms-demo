@@ -20,7 +20,7 @@ jobs:
           java-version: '11'
 
       - name: Run Test	
-        uses: GuillaumeFalourd/maven-cli-jdks-action@v1
+        uses: thundra-io/thundra-maven-test-action@v1.0.2
         with:
           commands: "clean install test"
 
