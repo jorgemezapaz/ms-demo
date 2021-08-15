@@ -19,8 +19,10 @@ jobs:
           distribution: 'adopt' # See 'Supported distributions' for available options
           java-version: '11'
 
-      - name: Run Test
-        uses: Maes95/maven-action@1.0.0
+      - name: Run Test	
+        uses: qcastel/github-actions-maven/actions/maven@master
+        with:
+          maven-args: "test"
 
       - name: Deploy to Heroku
         uses: AkhileshNS/heroku-deploy@v3.12.12
