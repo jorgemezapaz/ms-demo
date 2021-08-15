@@ -20,9 +20,9 @@ jobs:
           java-version: '11'
 
       - name: Run Test	
-        uses: qcastel/github-actions-maven/actions/maven@master
+        uses: GuillaumeFalourd/maven-cli-jdks-action@v1
         with:
-          maven-args: "test"
+          commands: "clean install test"
 
       - name: Deploy to Heroku
         uses: AkhileshNS/heroku-deploy@v3.12.12
