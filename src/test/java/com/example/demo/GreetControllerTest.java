@@ -26,6 +26,6 @@ class GreetControllerTest {
     void greet() throws Exception {
         mockMvc.perform(get("/greet/{name}", "Jorge")
                         .contentType("application/json"))
-                .andExpect(status().isOk());
+                .andExpect(status().isBadRequest());
     }
 }
